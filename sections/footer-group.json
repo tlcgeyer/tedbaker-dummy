@@ -2,49 +2,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "newsletter_qk7cJ9": {
-      "type": "newsletter",
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to our mailing list for insider news, product launches, and more.<\/p>"
-          }
-        },
-        "email_form": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 36,
-        "padding_bottom": 44
-      }
-    },
     "footer": {
       "type": "footer",
       "settings": {
@@ -64,8 +21,6 @@
     }
   },
   "order": [
-    "newsletter_qk7cJ9",
-    "newsletter",
     "footer"
   ]
 }
