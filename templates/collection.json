@@ -13,6 +13,9 @@
     },
     "main-collection-product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -45,7 +48,7 @@
         "text_htFNb9"
       ],
       "custom_css": [
-        ".rich-text__text {color: black; font-weight: 500; font-size: 13px;}"
+        ".rich-text__text {color: black; font-weight: 500; font-size: 13.5px;}"
       ],
       "settings": {
         "desktop_content_position": "center",

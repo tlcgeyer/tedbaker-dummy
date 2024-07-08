@@ -1215,9 +1215,6 @@ input.mobile-facets__checkbox {
     flex-grow: 1;
   }
 
-  .facets-container-drawer .product-count {
-    margin: 0 0 0.5rem 3.5rem;
-  }
 
   .facets-container-drawer .facets-pill {
     width: 100%;
