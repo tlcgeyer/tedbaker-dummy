@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Our favourite bomber jacket will be back. Pre-order now  12h 16m 57s",
+            "text": "Our favourite bomber jacket will be back. Pre-order now    12H  16M  57S",
             "link": ""
           }
         }
@@ -33,7 +33,7 @@
       "type": "header",
       "settings": {
         "logo_position": "top-center",
-        "menu": "main-menu",
+        "menu": "outlet",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "none",
         "show_line_separator": false,

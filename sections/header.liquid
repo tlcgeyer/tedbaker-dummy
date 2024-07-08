@@ -79,8 +79,6 @@
 </style>
 
 {%- style -%}
-
-
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
@@ -182,8 +180,7 @@
                 }}
               </div>
             {%- else -%}
-            {% comment %} Here is where the brands logo is located {% endcomment %}
-           <img class="theLogo"  src="{{'Ted Baker Logo.png' | asset_img_url}}"/>
+              <span class="h2"><img src="{{ 'Ted Baker Logo.png' |  asset_img_url }}" /></span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
