@@ -427,7 +427,7 @@
               </div>
             </div>
           {%- endif -%}
-          <div class="product-count light" role="status">
+          <div class="product-count " role="status">
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
@@ -837,7 +837,7 @@
     </facet-remove>
   </div>
     <div
-    class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
+    class="product-count {% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
     <h2 class="product-count__text text-body">
@@ -950,7 +950,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-weight: 500;
   }
   
-
+.facets-container {
+  margin-top: 20px;
+}
 </style>
