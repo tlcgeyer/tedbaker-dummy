@@ -9,6 +9,25 @@
   }
 {%- endstyle -%}
 
+<div class="header2">
+  <ul >
+   <li> Ted Baker official online store for South Africa</li>
+  </ul>
+  <ul>
+    |
+  </ul>
+  <ul>
+    <li>Free click & collect from all stores in South Africa</li>
+  </ul>
+  <ul>
+    |
+  </ul>
+  <ul>
+    <li>Free shipping on orders over R1000</li>  
+  </ul>
+</div>
+
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
@@ -87,4 +106,15 @@
     justify-content: center;
     font-size: 24px;
   }
+
+  .header2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  font-size: small;
+}
+
+.header2 li {
+  list-style-type: none; 
+}
 </style>
