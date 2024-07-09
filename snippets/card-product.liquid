@@ -204,6 +204,13 @@
               </p>
             {%- endif -%}
 
+            {% comment %} This is to display the variants of the product below the product {% endcomment %}
+             {% comment %} <p>
+              {%- for variant in card_product.variants-%}
+                {{variant.title}}
+              {%- endfor -%}
+             </p> {% endcomment %}
+
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
