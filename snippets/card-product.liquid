@@ -124,6 +124,8 @@
               </a>
             </h3>
           </div>
+              {% comment %} this section allows the admin to content within the image {% endcomment %}
+            
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
@@ -204,12 +206,7 @@
               </p>
             {%- endif -%}
 
-            {% comment %} This is to display the variants of the product below the product {% endcomment %}
-             {% comment %} <p>
-              {%- for variant in card_product.variants-%}
-                {{variant.title}}
-              {%- endfor -%}
-             </p> {% endcomment %}
+          
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}
@@ -294,7 +291,15 @@
               {% endif %}
             {%- endif -%}
           </div>
+          
+          {% comment %}To display the variants for the user to see  {% endcomment %}
+         <p style="font-size: 12px; color:rgba(171, 171, 171, 1)">
+          {%-for variant in card_product.variants-%}
+            {{variant.title}}
+          {%- endfor -%}  
+         </p>
         </div>
+      
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
           <div class="quick-add no-js-hidden">
