@@ -209,12 +209,109 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_GfAA9a": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_1062.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "faq_XLUzzt": {
+      "type": "faq",
+      "settings": {
+        "faq_title": "FAQs",
+        "faq_search_placeholder": "Search FAQs"
+      }
+    },
+    "collapsible_content_tjHbpT": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_eqp3dk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size should I buy?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_tMHgFr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I cancel my order?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_x7jgdK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I want to speak to someone?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_9c3iCh": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the shipping policy?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_xiGN7z": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's the return policy?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_eqp3dk",
+        "collapsible_row_tMHgFr",
+        "collapsible_row_x7jgdK",
+        "collapsible_row_9c3iCh",
+        "collapsible_row_xiGN7z"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "rich_text_ywKhDX",
-    "multirow_yNy4Ub"
+    "multirow_yNy4Ub",
+    "image_banner_GfAA9a",
+    "faq_XLUzzt",
+    "collapsible_content_tjHbpT"
   ]
 }

@@ -1,0 +1,91 @@
+{% schema %}
+    {
+      "name": "FAQ Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_title",
+          "label": "FAQ Title",
+          "default": "Frequently Asked Questions"
+        },
+        {
+          "type": "text",
+          "id": "faq_search_placeholder",
+          "label": "Search Placeholder Text",
+          "default": "Search FAQs"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "faq",
+          "name": "FAQ",
+          "settings": [
+            {
+              "type": "text",
+              "id": "question",
+              "label": "Question"
+            },
+            {
+              "type": "textarea",
+              "id": "answer",
+              "label": "Answer"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "FAQ Section",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+  
+  <section class="faq-section">
+  <h2>{{ section.settings.faq_title }}</h2>
+  
+  <div class="faq-search">
+    <input type="text" id="faq-search-input" placeholder="{{ section.settings.faq_search_placeholder }}">
+    <svg class="faq-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M10,2A8,8,0,0,0,10,18a8,8,0,0,0,5.63-2.37L21.72,21.72a1,1,0,1,0,1.41-1.41l-6.09-6.09A8,8,0,0,0,10,2ZM4,10A6,6,0,1,1,10,16,6,6,0,0,1,4,10Z"/>
+    </svg>
+  </div>
+
+  <ul class="faq-list">
+    {% for block in section.blocks %}
+      <li class="faq-item">
+        <h3 class="faq-question">{{ block.settings.question }}</h3>
+        <div class="faq-answer">{{ block.settings.answer }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<style>
+  .faq-search {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  #faq-search-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .faq-search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    fill: #999;
+  }
+</style>
+
