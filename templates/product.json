@@ -20,6 +20,20 @@
           "settings": {
           }
         },
+        "text_8mRGVx": {
+          "type": "text",
+          "settings": {
+            "text": "From R349.67 p\/m. Interest & fee free with <strong>PAY<\/strong>JUST<strong>NOW<\/strong>®<span style=\"text-decoration:underline\"> Learn more<\/span>",
+            "text_style": "body"
+          }
+        },
+        "text_pwcefk": {
+          "type": "text",
+          "settings": {
+            "text": "Split into 4x interest-free payments of R300.00 p\/m with payflex <span style=\"text-decoration:underline\">Learn more<\/span>",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -39,9 +53,31 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
+        "collapsible_tab_f6zkyA": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Item Description",
+            "icon": "shirt",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_BzB8zf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric & Care",
+            "icon": "washing",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_k84HDz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery & Returns",
+            "icon": "box",
+            "content": "",
+            "page": ""
           }
         },
         "share": {
@@ -55,22 +91,26 @@
         "text",
         "title",
         "price",
+        "text_8mRGVx",
+        "text_pwcefk",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "collapsible_tab_f6zkyA",
+        "collapsible_tab_BzB8zf",
+        "collapsible_tab_k84HDz",
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-1",
-        "media_size": "medium",
-        "constrain_to_viewport": true,
+        "media_size": "small",
+        "constrain_to_viewport": false,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -85,7 +125,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -94,10 +134,87 @@
         "padding_top": 36,
         "padding_bottom": 68
       }
+    },
+    "rich_text_ywKhDX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wYyWrM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our fabrics are developed specifically for us and we only produce quality apparel that lasts.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wYyWrM"
+      ],
+      "custom_css": [
+        ".rich-text {font-weight: 500; background-color: rgba(247, 247, 247, 1);}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "multirow_yNy4Ub": {
+      "type": "multirow",
+      "blocks": {
+        "row_RPrY6V": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_9.png",
+            "caption": "",
+            "heading": "Sustainability",
+            "text": "<h5>We only work with suppliers who take social and environmental standards seriously. They continuously look to exceed industry standards. We can vouch for the factories we use because we frequently visit them ourselves.<\/h5>",
+            "button_label": "Read more",
+            "button_link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "row_wPax6p": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_10.png",
+            "caption": "ESSENTIALS",
+            "heading": "Premium quality",
+            "text": "<h5>We make premium quality apparel that can be worn all year round. We don’t design seasonal collections, instead we add new permanent items to our range. We pay attention to details and take care over what fabrics we use. Our range is composed of finely crafted, timeless unisex garments and accessories.<\/h5>",
+            "button_label": "Shop collection",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "row_RPrY6V",
+        "row_wPax6p"
+      ],
+      "custom_css": [
+        ".button {border-radius:none;}"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "rich_text_ywKhDX",
+    "multirow_yNy4Ub"
   ]
 }
