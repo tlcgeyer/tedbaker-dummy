@@ -192,7 +192,7 @@
         "row_wPax6p"
       ],
       "custom_css": [
-        ".button {border-radius:none;}"
+        ".button {border-radius: 10px;}"
       ],
       "settings": {
         "image_height": "medium",
