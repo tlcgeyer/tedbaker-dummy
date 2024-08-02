@@ -8,6 +8,11 @@
 * ------------------------------------------------------------
 */
 {
+  "order": [
+    "main-collection-banner",
+    "main-collection-product-grid",
+    "rich_text_EUnLfW"
+  ],
   "sections": {
     "main-collection-banner": {
       "type": "main-collection-banner",
@@ -68,10 +73,5 @@
         "padding_bottom": 52
       }
     }
-  },
-  "order": [
-    "main-collection-banner",
-    "main-collection-product-grid",
-    "rich_text_EUnLfW"
-  ]
+  }
 }
